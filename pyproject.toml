@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "riddle-site"
+name = "lab_riddler_django"
 version = "0.1.0"
 description = ""
 authors = ["emma <eqbrown@isf.edu.hk>"]
