@@ -49,9 +49,11 @@ def guess_riddle(request,pk):
 
         if form.is_valid():
             form_cleaned= form.cleaned_data
+            form_guess = form_cleaned['guess']
             
-            if form_cleaned['guess'] == riddle.answer:
+            if riddle.check_guess(form_guess) == True:
                 context['message'] = 'Correct'
+
             else:
                 context['message'] = 'False'
 
