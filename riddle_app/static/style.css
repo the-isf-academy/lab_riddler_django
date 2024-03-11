@@ -3,12 +3,11 @@
 :root {
     --primary-color: rgb(105, 80, 65);
     --secondary-color: rgb(165, 121, 94);
-
 }
   
 
 p{
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 300;
 }
 
@@ -32,6 +31,16 @@ body{
     margin-right: 100px;
 }
 
+.container{
+    display: flex;
+    gap: 100px;
+    margin: 0px 100px;
+}
+
+.col-lg{
+    flex-grow:3;
+}
+
 .navigation{
     margin-top: 100px;
 }
@@ -51,15 +60,18 @@ body{
     list-style: none;
 }
 
-.list{
+.list li{
     font-size: 1.5em;
     font-weight: 300;
+    line-height: 2em;
 }
 
 .btn{
     background-color:rgb(165, 121, 94);
     color: rgb(246, 243, 235);
-    display: inline;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
 }
 
 .btn:hover{
@@ -83,11 +95,13 @@ a:hover{
 }
 
 
+
 /* for mobile */
 
 @media (max-width: 992px) { 
-    .container, .row{
-        display: inline-block;
+    .container{
+        display: block;
+        margin: 20px;
     }
 
     .navigation li{
@@ -96,9 +110,8 @@ a:hover{
     }
 
     body{
-        margin-left: 50px;
-        width: 100%
-        /* margin-right: 50px; */
+        width: 100%;
+        margin: 0;
     }
  }
 

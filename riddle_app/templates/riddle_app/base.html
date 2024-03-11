@@ -1,0 +1,34 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type ="text/css" href="{% static 'style.css' %}">
+    
+
+</head>
+
+<body>
+
+  <div class="container">
+
+
+    <div>
+      {% include 'riddle_app/navigation.html' %}
+    </div>
+  
+    <div class="col-lg">
+      {% block content %}
+      {% endblock %}
+    </div>
+
+
+  </div>
+
+</body>
+</html>
+

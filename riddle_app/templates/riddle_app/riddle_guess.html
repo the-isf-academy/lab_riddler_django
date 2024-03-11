@@ -1,14 +1,15 @@
-{% extends "base.html" %}
+{% extends "riddle_app/base.html" %}
 
 {% block content %}
     <h1>Random Riddle</h1>
 
     <p><b>Question: </b>{{ riddle }}</p>
 
-    {% if message %}    
+    {% if message %}  
+      
         <p><b>Correct: </b>{{message}}</p>
 
-        <a href="{% url 'riddle-guess' pk=riddle.id %}"><button class="btn btn-info">Guess Again</button></a>
+        <a href="{% url 'riddle_app:riddle-guess' pk=riddle.id %}"><button class="btn btn-info">Guess Again</button></a>
 
 
     {% else %}

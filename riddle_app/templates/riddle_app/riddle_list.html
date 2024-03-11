@@ -1,0 +1,12 @@
+{% extends "riddle_app/base.html" %}
+
+{% block content %}
+    <h1>ISF Riddler</h1>
+
+    <ul class="list">
+
+        {% for riddle in object_list %}
+            <a href="{% url 'riddle_app:riddle-detail' pk=riddle.id %}"><li class="m-2">{{riddle}}</li></a>
+        {% endfor %}
+    </ul>
+{% endblock %}

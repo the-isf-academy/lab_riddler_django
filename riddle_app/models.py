@@ -26,3 +26,6 @@ class Riddle(models.Model):
     def increase_likes(self):
         self.likes += 1
         self.save()
+
+
+        
