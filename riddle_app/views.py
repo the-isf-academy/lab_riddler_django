@@ -19,7 +19,7 @@ class RiddleDetailView(DetailView):
 class NewRiddleForm(FormView):
     template_name = "riddle_app/new_riddle_form.html"
     form_class = NewRiddleForm
-    success_url = reverse_lazy('index')
+    success_url = reverse_lazy('riddle_app:index')
 
 
     def form_valid(self, form):
