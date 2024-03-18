@@ -52,7 +52,7 @@ def guess_riddle(request,pk):
             form_guess = form_cleaned['guess']
             
             if riddle.check_guess(form_guess) == True:
-                context['message'] = 'Correct'
+                context['message'] = 'True'
 
             else:
                 context['message'] = 'False'
