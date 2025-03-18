@@ -13,13 +13,13 @@ class RiddleModelTest(TestCase):
         cls.riddle = Riddle.objects.create(
             question="What has hands and a face, but can’t smile?",
             answer="A clock",
-            difficulty='E'
+            difficulty=1
         )
 
     def test_fields(self):
         self.assertEqual(self.riddle.question, "What has hands and a face, but can’t smile?")
         self.assertEqual(self.riddle.answer, "A clock")
-        self.assertEqual(self.riddle.difficulty, 'E')
+        self.assertEqual(self.riddle.difficulty, 1)
     
     def test_methods(self):
         correct_guess = self.riddle.check_guess('A clock')
