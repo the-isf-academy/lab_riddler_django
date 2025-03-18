@@ -38,9 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'riddle_app.apps.RiddleAppConfig',
-    'bootstrap5',
-
-
 ]
 
 MIDDLEWARE = [

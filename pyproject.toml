@@ -7,10 +7,10 @@ readme = "README.md"
 packages = [{include = "riddle_site"}]
 
 [tool.poetry.dependencies]
-python = "^3.8.1"
+python = "^3.9"
 Django = "^4.1.7"
-django-bootstrap-v5 = "^1.0.11"
 fuzzywuzzy = "^0.18.0"
+python-levenshtein = "^0.27.1"
 
 
 [build-system]

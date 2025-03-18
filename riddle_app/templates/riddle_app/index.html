@@ -1,0 +1,11 @@
+{% extends "riddle_app/base.html" %}
+
+{% block content %}
+    <h1>Riddler</h1>
+
+    <p>{{ random_riddle.question }}</p>
+
+    <a href="{% url 'riddle_app:guess' pk=random_riddle.id %}">Guess</a>
+
+
+{% endblock %}

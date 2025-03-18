@@ -1,119 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Zilla+Slab:wght@400;600&display=swap');
 
 :root {
-    --primary-color: rgb(105, 80, 65);
-    --secondary-color: rgb(165, 121, 94);
+    --color1: rgb(0, 0, 0);
+    --color2: rgb(89, 103, 83);
+    --color3: rgb(255, 255, 255);
 }
   
 
-p{
-    font-size: 1.5em;
-    font-weight: 300;
-}
-
 h1{
-    font-family: 'Zilla Slab';
+    font-family: 'Open Sans';
     font-weight: 600;
     font-size: 4em;
-    line-height: 1.5em;
-    display: inline;
-    background: var(--primary-color);
-    color: #ffffff;
-
+    color: var(--color1);
 }
 
 body{
-    background-color: rgb(249, 240, 231);
-    color: rgb(26, 26, 26);
+    background-color: var(--color3);
     font-family: 'Open Sans', sans-serif;
-    margin-top: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.container{
-    display: flex;
-    gap: 100px;
-    margin: 0px 100px;
-}
-
-.col-lg{
-    flex-grow:3;
-}
-
-.navigation{
-    margin-top: 100px;
-}
-
-.navigation a{
-    text-decoration: none;
-    font-size: 1.2em;
-    color: rgb(105, 80, 65);
-}
-
-.navigation a:hover{
-    color: rgb(165, 121, 94);
-}
-
-.navigation li{
-    margin-bottom: 10px;
-    list-style: none;
-}
-
-.list li{
-    font-size: 1.5em;
-    font-weight: 300;
-    line-height: 2em;
-}
-
-.btn{
-    background-color:rgb(165, 121, 94);
-    color: rgb(246, 243, 235);
-    padding: 10px 20px;
-    border: 0;
-    border-radius: 5px;
-}
-
-.btn:hover{
-    background-color:rgb(113, 81, 61);
-    color: rgb(246, 243, 235);
 
 }
 
-input, select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-}
-
-a{
-    color: var(--primary-color);
-}
-
-a:hover{
-    color:var(--secondary-color);
-}
-
-
-
-/* for mobile */
-
-@media (max-width: 992px) { 
-    .container{
-        display: block;
-        margin: 20px;
-    }
-
-    .navigation li{
-        display: inline-block;
-
-    }
-
-    body{
-        width: 100%;
-        margin: 0;
-    }
- }
-
-
- 
