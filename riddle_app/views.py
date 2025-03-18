@@ -51,7 +51,6 @@ def guess_riddle(request, pk):
     else:
         form = GuessRiddleForm()
     
-    
     params['form'] = form
 
     return render(request, "riddle_app/guess_riddle.html", params)
